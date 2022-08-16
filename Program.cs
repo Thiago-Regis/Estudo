@@ -7,24 +7,31 @@ namespace Calculadora
         static void Main(string[] args)
         {
             string intermediario;
-            int operacao, num1, num2,resultado;
+            int operacao;
+            float num, num1, num2,resultado;
 
-            Console.WriteLine("Escolha 1-soma(+), 2-subtração(-), 3-multiplicação(*) e 4-divisão(/)");
-            intermediario = Console.ReadLine();
-            operacao = Int32.Parse(intermediario);
+            int escolhaOperacao (){
+                Console.WriteLine("Escolha 1-soma(+), 2-subtração(-), 3-multiplicação(*) e 4-divisão(/)");
+                intermediario = Console.ReadLine();
+                operacao = Int32.Parse(intermediario);
+                return operacao;
+            }
 
+
+            float escolhaDoNumero(){
+                    Console.WriteLine("Digite um numero");
+                    intermediario = Console.ReadLine();
+                    num = Int32.Parse(intermediario);
+                    return num;
+            }
+        
+            operacao = escolhaOperacao();
             switch (operacao)
                 {
                 /*soma entrada de dados basico*/
                 case 1:
-                    Console.WriteLine("Digite um numero");
-                    intermediario = Console.ReadLine();
-                    num1 = Int32.Parse(intermediario);
-
-                    Console.WriteLine("Digite um outro numero");
-                    intermediario = Console.ReadLine();
-                    num2 = Int32.Parse(intermediario);
-
+                    num1 = escolhaDoNumero();
+                    num2 = escolhaDoNumero();
                     resultado = num1 + num2;
                     Console.WriteLine("Sua resposta é:" + resultado);
                     Console.ReadKey();
@@ -33,14 +40,8 @@ namespace Calculadora
 
                 /*subtração entrada de dados basico*/
                 case 2:
-                    Console.WriteLine("Digite um numero");
-                    intermediario = Console.ReadLine();
-                    num1 = Int32.Parse(intermediario);
-
-                    Console.WriteLine("Digite um outro numero");
-                    intermediario = Console.ReadLine();
-                    num2 = Int32.Parse(intermediario);
-
+                    num1 = escolhaDoNumero();
+                    num2 = escolhaDoNumero();
                     resultado = num1 - num2;
                     Console.WriteLine("Sua resposta é:" + resultado);
                     Console.ReadKey();
@@ -48,14 +49,8 @@ namespace Calculadora
                     break;
                 /*multiplicação entrada de dados basico*/
                 case 3:
-                    Console.WriteLine("Digite um numero");
-                    intermediario = Console.ReadLine();
-                    num1 = Int32.Parse(intermediario);
-
-                    Console.WriteLine("Digite um  outro  numero");
-                    intermediario = Console.ReadLine();
-                    num2 = Int32.Parse(intermediario);
-
+                    num1 = escolhaDoNumero();
+                    num2 = escolhaDoNumero();
                     resultado = num1 * num2;
                     Console.WriteLine("Sua resposta é:" + resultado);
                     Console.ReadKey();
@@ -64,14 +59,8 @@ namespace Calculadora
 
                 /*divisão entrada de dados basico*/
                 case 4:
-                    Console.WriteLine("Digite um numero");
-                    intermediario = Console.ReadLine();
-                    num1 = Int32.Parse(intermediario);
-
-                    Console.WriteLine("Digite um outro numero");
-                    intermediario = Console.ReadLine();
-                    num2 = Int32.Parse(intermediario);
-
+                    num1 = escolhaDoNumero();
+                    num2 = escolhaDoNumero();
                     resultado = num1 / num2;
                     Console.WriteLine("Sua resposta é:"+resultado);
                     Console.ReadKey();
