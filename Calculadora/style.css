@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to right,#9600ff, #AEBAF8);
+}
+
+.grid-conteiner{
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    min-height:100vh;
+    grid-template-columns: repeat(4,90px);/*colunas(4 para ter 4 colunas)*/
+    grid-template-rows: minmax(120px,auto)repeat(5,90px);/*linhas(5 por causa que tem5 colunas)*/
+}
+
+.grid-conteiner button{
+    cursor: pointer;
+    font-size: 2rem;
+    border:none;
+    outline: none;
+    background-color: #111;
+    color: #eee;
+}
+
+.grid-conteiner button:hover{
+background-color: #eee;
+color: #111;
+
+}
+ .grid-conteiner .operator{
+    background: #41b88375;
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.grid-conteiner .output{
+    grid-column: 1/-1;
+    background:#222;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;/*Quebra as linhas*/
+    word-break: break-all;/*Serve para  quebrar o conteudo casso ele ultrpasse o limite do border(div) ele na vaze para fora da div |||||é usada para especificar se o navegador deve inserir ou não quebras de linha onde, normalmente, o texto vazaria de seu container.*/
+}
+.grid-conteiner .output .previus-operand{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+}
+
+.grid-conteiner .output .current-operand{
+    color: #fff;
+    font-size: 2.5rem;
+}
