@@ -1,0 +1,21 @@
+body {
+    font-family: system-ui;
+    background: #ddd;
+    color: white;
+    text-align: center;
+  }
+
+#butons button#ligado{
+    background-color: green;
+    border-radius: 10px;
+    border: 1.15px solid black;
+    width:80px;
+}
+
+#butons button#desligado{
+    background-color: red;
+    border-radius: 10px;
+    border: 1.15px solid black;
+    width:80px;
+}
+
