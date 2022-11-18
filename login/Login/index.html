@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="conteiner">
+        <!-- inicio login pelo email-->
+        <div id="caixa-login">
+            <h2>Login</h2>
+            <div id="msgErro"></div>
+            <div id="msgSucesso"></div>
+            <div class="caixa-flutuante">
+                <input type="text" id="usuario" placeholder="" required>
+                <label id="labelUsuario" for="usuario">Email</label>
+            </div>
+            <!-- fim login pelo email-->
+
+            <!--inicio login pela senha-->
+            <div class="caixa-flutuante">
+                <input type="password" id="senha" placeholder="" required>
+                <label id="labelSenha" for="senha">Senha</label>
+                <i class="fa-regular fa-eye"></i>
+            </div>
+            <!--fim login pela senha-->
+            <div class="caixa-justificada">
+                <button onclick='entrar()'>Entrar</button>
+            </div>
+
+            <div class="caixa-justificada">
+                <hr>
+            </div>
+            <p>Não tem uma conta? <a href="../Cadastro/cadastro.html">Criar conta</a></p>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

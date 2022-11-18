@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: url(https://i.pinimg.com/originals/f2/e7/08/f2e70871501c6af91c122b6a374fc24f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*Faz ele cobrir toda atela*/
+    background-attachment: fixed;
+}
+
+#conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#caixa-login {
+    background-color: #ffffff80;
+    padding: 20px;
+    border-radius: 4%;
+    box-shadow: 6px 3px 1px 0px #00000065;
+    /*faz um efeito de sombra*/
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #070C3F;
+    /*usando colorzilla*/
+}
+
+.caixa-flutuante input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #00000085;
+    /*isso coloca a linha embaaixo*/
+    background-color: transparent;
+    /*tira o background branco*/
+    outline: none;
+    /*tira a caixa do input*/
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    /*Isso d o efeito de transição*/
+    border-radius: 0;
+}
+
+.caixa-flutuante {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.caixa-flutuante input:focus {
+    border-bottom: 2px solid #4038a0;
+}
+
+.caixa-flutuante label {
+    color: #272262;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    /*Isso d o efeito de transição*/
+}
+
+.caixa-flutuante input:focus+label,
+.caixa-flutuante input:valid+label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #4038a0;
+}
+
+button {
+    background-color: transparent;
+    border-color: #070C3F;
+    color: #070C3F;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+    /*efeito no bottom */
+}
+
+button:hover {
+    background-color: #070C3F;
+    color: #ffffff;
+}
+
+.caixa-justificada {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+
+p {
+    color: #070C3F;
+    font-size: 14px;
+    text-align: center;
+}
+
+a {
+    color: #4038a0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #272262;
+    transition: all .3s ease-out;
+    /*efeito */
+}
+
+.fa-eye {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    cursor: pointer;
+    color: #272262;
+}
+
+#msgErro {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+
+}
+
+#msgSucesso {
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
