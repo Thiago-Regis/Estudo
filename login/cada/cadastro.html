@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../fontawesome/css/all.min.css">  
+        <link rel="stylesheet" href="style2.css">
+        <title>Login</title>
+    </head>
+    <body>
+
+        <div id="conteiner">
+
+            <!-- inicio login pelo email-->
+            <div id="caixa-login">
+
+
+                <h2>Cadastrar</h2>
+                <div id="msgErro"></div>
+                <div id ="msgSucesso"></div>
+
+                <!--começo do nome-->
+                <div class="caixa-flutuante">
+                    <input type="text" id="nome" placeholder="" required>
+                    <label id="labelNome" for="nome">Nome</label>
+                </div>
+                <!--fim do nome-->
+
+                <div class="caixa-flutuante">
+                    <input type="text" id="usuario" placeholder="" required>
+                    <label id="labelUsuario" for="usuario">Email</label>
+                </div>
+                <!-- fim login pelo email-->
+
+                <!--inicio login pela senha-->
+                <div class="caixa-flutuante">
+                    <input type="password" id="senha" placeholder="" required>
+                    <label id="labelSenha" for="senha">Senha</label>
+                    <i id="verSenha" class="fa-regular fa-eye"></i>
+                </div>
+                <!--fim login pela senha-->
+
+                <!--começo confirmar senha-->
+                <div class="caixa-flutuante">
+                    <input type="password" id="confirmeSenha" placeholder="" required>
+                    <label id="labelConfirmeSenha" for="confirmeSenha">Confirmar senha</label>
+                    <i id="verConfirmeSenha" class="fa-regular fa-eye"></i>
+                </div>
+                 <!--começo confirmar senha-->
+                <div class="caixa-justificada">
+                    <button onclick = 'cadastrar()'>Cadastrar</button>
+                </div>
+
+            </div>    
+    </div>
+    <script src="script2.js"></script>
+    </body>
+</html>
