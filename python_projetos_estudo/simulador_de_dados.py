@@ -2,7 +2,7 @@
 # Simular um lançamento de dado de 1 a 6 
 
 import random 
-from PySimpelGUI import PySimpleGUI as sg 
+from PySimpleGUI import PySimpleGUI as sg 
 
 class SimuladorDeDado:
     def __init__(self) : #Definindo uma classe inicial
